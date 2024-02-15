@@ -1,7 +1,7 @@
 FROM node:18.16-alpine as builder
 WORKDIR /app
-COPY files_system/package*.json .
-COPY files_system/package*.lock .
+COPY files_system/package*.json ./
+COPY files_system/package*.lock ./
 RUN npm install
 COPY files_system .
 RUN npm run build
