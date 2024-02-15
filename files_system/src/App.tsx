@@ -3,6 +3,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { closeSnackbar, SnackbarProvider } from "notistack";
 import { IconButton } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
+import FilesSystem from "components/FilesSystem";
 
 function App() {
   return (
@@ -19,7 +20,9 @@ function App() {
             <CloseIcon />
           </IconButton>
         )}
-      ></SnackbarProvider>
+      >
+        <FilesSystem />
+      </SnackbarProvider>
     </Router>
   );
 }
