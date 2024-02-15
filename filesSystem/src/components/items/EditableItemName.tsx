@@ -43,7 +43,6 @@ const EditableItemName: React.FC<EditableItemNameProps> = ({
         enqueueSnackbar(getErrorDetails(error), { variant: "error" });
       })
       .finally(() => {
-        console.log(name);
         setIsInputDisabled(false);
         setItemName(name);
         setIsRenaming(false);

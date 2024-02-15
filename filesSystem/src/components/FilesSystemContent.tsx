@@ -51,7 +51,6 @@ const FilesSystemContent: React.FC = () => {
         }
       })
       .catch((error) => {
-        console.log(error);
         switch (error?.response?.status) {
           case 404:
             setContent({
